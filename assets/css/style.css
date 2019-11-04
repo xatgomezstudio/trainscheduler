@@ -1,0 +1,78 @@
+#grad {
+    background-image: linear-gradient(red, yellow);
+  }
+
+  *,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    box-sizing: border-box;
+    padding: 0 3rem;
+    font-size: 1.6rem;
+}
+
+.header {
+    height: 40vh;
+    background-image: linear-gradient(to bottom right, rgba(241, 80, 241, .8), rgb(0, 225, 255)), 
+    url("corporate-header.jpg");
+    background-color: aquamarine;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    border-bottom: 1rem solid black;
+    margin-bottom: 2rem;
+}
+
+.header__text-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.content {
+    max-width: 90rem;
+    margin: 0 auto;
+}
+
+.primary-border {
+    border: .3rem solid black;
+    padding: 2rem;
+}
+
+.heading-primary {
+    color: white;
+    text-transform: uppercase;
+
+    backface-visibility: hidden;
+    margin-bottom: 6rem;
+}
+
+.heading-primary--main {
+    display: block;
+    font-size: 6rem;
+    font-weight: 400;
+    letter-spacing: 3.5rem;
+
+    animation-name: moveInLeft;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+
+}
+
+.heading-primary--sub {
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 1.75rem;
+}
